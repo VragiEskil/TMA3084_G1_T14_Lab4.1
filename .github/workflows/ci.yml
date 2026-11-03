@@ -1,39 +1,40 @@
+
 name: Flutter CI
 
 on:
   push:
-    branches: [ "main", "feature/**" ]
   pull_request:
-    branches: [ "main" ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
 
 jobs:
-  build:
+  flutter-checks:
+    name: Format, Analyze and Test
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Set up Java
-        uses: actions/setup-java@v4
-        with:
-          distribution: 'zulu'
-          java-version: '17'
-
-      - name: Set up Flutter
+      - name: Set Up Flutter
         uses: subosito/flutter-action@v2
         with:
-          channel: 'stable'
+          channel: stable
           cache: true
 
-      - name: Install dependencies
+      - name: Show Flutter Version
+        run: flutter --version
+
+      - name: Install Dependencies
         run: flutter pub get
 
-      - name: Verify code formatting
+      - name: Check Dart Formatting
         run: dart format --output=none --set-exit-if-changed .
 
-      - name: Analyze project source code
+      - name: Analyze Flutter Code
         run: flutter analyze
 
-      - name: Run widget and unit tests
+      - name: Run Automated Tests
         run: flutter test
