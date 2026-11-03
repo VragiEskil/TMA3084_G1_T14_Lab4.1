@@ -75,11 +75,16 @@ class HomePage extends StatelessWidget {
               child: OutlinedButton.icon(
                 onPressed: () => Navigator.pushNamed(context, '/menu'),
                 icon: const Icon(Icons.menu_book, color: Colors.blue),
-                label: const Text('View Menu', style: TextStyle(fontSize: 16, color: Colors.blue)),
+                label: const Text(
+                  'View Menu',
+                  style: TextStyle(fontSize: 16, color: Colors.blue),
+                ),
                 style: OutlinedButton.styleFrom(
                   side: const BorderSide(color: Colors.blue, width: 2),
                   padding: const EdgeInsets.symmetric(vertical: 14),
-                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10),
+                  ),
                 ),
               ),
             ),
@@ -89,11 +94,16 @@ class HomePage extends StatelessWidget {
               child: OutlinedButton.icon(
                 onPressed: () => Navigator.pushNamed(context, '/about'),
                 icon: const Icon(Icons.info_outline, color: Colors.blue),
-                label: const Text('About Us', style: TextStyle(fontSize: 16, color: Colors.blue)),
+                label: const Text(
+                  'About Us',
+                  style: TextStyle(fontSize: 16, color: Colors.blue),
+                ),
                 style: OutlinedButton.styleFrom(
                   side: const BorderSide(color: Colors.blue, width: 2),
                   padding: const EdgeInsets.symmetric(vertical: 14),
-                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10),
+                  ),
                 ),
               ),
             ),
@@ -102,12 +112,20 @@ class HomePage extends StatelessWidget {
               width: double.infinity,
               child: OutlinedButton.icon(
                 onPressed: () => Navigator.pushNamed(context, '/contact'),
-                icon: const Icon(Icons.contact_support_outlined, color: Colors.blue),
-                label: const Text('Contact Us', style: TextStyle(fontSize: 16, color: Colors.blue)),
+                icon: const Icon(
+                  Icons.contact_support_outlined,
+                  color: Colors.blue,
+                ),
+                label: const Text(
+                  'Contact Us',
+                  style: TextStyle(fontSize: 16, color: Colors.blue),
+                ),
                 style: OutlinedButton.styleFrom(
                   side: const BorderSide(color: Colors.blue, width: 2),
                   padding: const EdgeInsets.symmetric(vertical: 14),
-                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10),
+                  ),
                 ),
               ),
             ),
@@ -116,7 +134,11 @@ class HomePage extends StatelessWidget {
             // Social Media Section
             const Text(
               'Connect With Us',
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16, color: Colors.black87),
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 16,
+                color: Colors.black87,
+              ),
             ),
             const SizedBox(height: 12),
             Row(
@@ -135,7 +157,11 @@ class HomePage extends StatelessWidget {
                 ),
                 // Facebook Icon Button
                 IconButton(
-                  icon: const Icon(Icons.facebook, size: 36, color: Colors.indigo),
+                  icon: const Icon(
+                    Icons.facebook,
+                    size: 36,
+                    color: Colors.indigo,
+                  ),
                   tooltip: 'Facebook',
                   onPressed: () => Navigator.pushNamed(context, '/facebook'),
                 ),
