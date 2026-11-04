@@ -29,7 +29,7 @@ class PizzaStoreApp extends StatelessWidget {
         //'/menu': (context) => const MenuPage(),
         //'/about': (context) => const AboutPage(),
         //'/contact': (context) => const ContactPage(),
-        //'/twitter': (context) => const WebViewPage(url: 'https://twitter.com', title: 'Twitter/X'),
+        '/twitter': (context) => const WebViewPage(url: 'https://twitter.com', title: 'Twitter/X'),
         '/facebook': (context) => const WebViewPage(url: 'https://facebook.com', title: 'Facebook'),
       },
     );
