@@ -6,10 +6,7 @@ class AboutPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('About Ye Pizza'),
-        centerTitle: true,
-      ),
+      appBar: AppBar(title: const Text('About Ye Pizza'), centerTitle: true),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(24.0),
         child: Column(
@@ -33,14 +30,18 @@ class AboutPage extends StatelessWidget {
             Text(
               'Our Story',
               style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-                    fontWeight: FontWeight.bold,
-                    color: Colors.deepOrange,
-                  ),
+                fontWeight: FontWeight.bold,
+                color: Colors.deepOrange,
+              ),
             ),
             const SizedBox(height: 12),
             const Text(
               'Founded with a passion for authentic wood-fired pizzas, Ye Pizza delivers hand-crafted artisanal pies using only locally sourced ingredients and time-honored traditional techniques.',
-              style: TextStyle(fontSize: 16, height: 1.6, color: Colors.black87),
+              style: TextStyle(
+                fontSize: 16,
+                height: 1.6,
+                color: Colors.black87,
+              ),
             ),
             const SizedBox(height: 24),
             const Divider(),
@@ -48,9 +49,9 @@ class AboutPage extends StatelessWidget {
             Text(
               'Why Choose Us?',
               style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-                    fontWeight: FontWeight.bold,
-                    color: Colors.deepOrange,
-                  ),
+                fontWeight: FontWeight.bold,
+                color: Colors.deepOrange,
+              ),
             ),
             const SizedBox(height: 16),
             const _ValueTile(
@@ -107,10 +108,7 @@ class _ValueTile extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 4),
-                Text(
-                  description,
-                  style: const TextStyle(color: Colors.grey),
-                ),
+                Text(description, style: const TextStyle(color: Colors.grey)),
               ],
             ),
           ),
