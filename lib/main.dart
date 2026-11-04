@@ -28,14 +28,10 @@ class YePizzaApp extends StatelessWidget {
         '/menu': (context) => const MenuPage(),
         '/about': (context) => const AboutPage(),
         //'/contact': (context) => const ContactPage(),
-        '/twitter': (context) => const WebViewPage(
-              title: 'Twitter / X',
-              url: 'https://x.com',
-            ),
-        '/facebook': (context) => const WebViewPage(
-              title: 'Facebook',
-              url: 'https://facebook.com',
-            ),
+        '/twitter': (context) =>
+            const WebViewPage(title: 'Twitter / X', url: 'https://x.com'),
+        '/facebook': (context) =>
+            const WebViewPage(title: 'Facebook', url: 'https://facebook.com'),
       },
     );
   }
