@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 
-// All imports must be placed strictly at the top of the file
 import 'pages/home_page.dart';
 import 'pages/menu_page.dart';
 import 'pages/about_page.dart';
-import 'pages/contact_page.dart';
+//import 'pages/contact_page.dart';
 import 'pages/webview_page.dart';
 
 void main() {
@@ -28,7 +27,7 @@ class YePizzaApp extends StatelessWidget {
         '/': (context) => const HomePage(),
         '/menu': (context) => const MenuPage(),
         '/about': (context) => const AboutPage(),
-        '/contact': (context) => const ContactPage(),
+        //'/contact': (context) => const ContactPage(),
         '/twitter': (context) => const WebViewPage(
               title: 'Twitter / X',
               url: 'https://x.com',
