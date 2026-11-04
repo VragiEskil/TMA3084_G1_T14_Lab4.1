@@ -5,7 +5,7 @@ import 'pages/home_page.dart';
 import 'pages/menu_page.dart';
 import 'pages/about_page.dart';
 import 'pages/contact_page.dart';
-import 'pages/web_view_page.dart';
+import 'pages/webview_page.dart';
 
 void main() {
   runApp(const YePizzaApp());
