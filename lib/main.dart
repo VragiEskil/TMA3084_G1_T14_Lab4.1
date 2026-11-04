@@ -5,7 +5,7 @@ import 'pages/home_page.dart';
 //import 'pages/menu_page.dart';
 //import 'pages/about_page.dart';
 //import 'pages/contact_page.dart';
-//import 'pages/webview_page.dart';
+import 'pages/webview_page.dart';
 
 void main() {
   runApp(const PizzaStoreApp());
@@ -30,7 +30,7 @@ class PizzaStoreApp extends StatelessWidget {
         //'/about': (context) => const AboutPage(),
         //'/contact': (context) => const ContactPage(),
         //'/twitter': (context) => const WebViewPage(url: 'https://twitter.com', title: 'Twitter/X'),
-        //'/facebook': (context) => const WebViewPage(url: 'https://facebook.com', title: 'Facebook'),
+        '/facebook': (context) => const WebViewPage(url: 'https://facebook.com', title: 'Facebook'),
       },
     );
   }
